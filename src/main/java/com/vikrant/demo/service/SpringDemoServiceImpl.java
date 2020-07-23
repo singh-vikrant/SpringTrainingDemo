@@ -29,7 +29,6 @@ public class SpringDemoServiceImpl implements SpringDemoService {
 		return springDemoDao.findAll();
 
 	}
-
 	@Override
 	@Transactional
 	public Optional<SpringDemo> createImage(SpringDemo springDemo) {
@@ -37,8 +36,6 @@ public class SpringDemoServiceImpl implements SpringDemoService {
 		springDemoDao.save(springDemo);
 		return Optional.of(springDemo);
 	}
-	
-
 	@Override
 	@Transactional
 	public Optional<SpringDemo> updateImage(SpringDemo springDemo,UUID id) {
